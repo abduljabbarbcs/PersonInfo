@@ -1,0 +1,17 @@
+<h2>Person Info</h2>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>NAME</th>
+    <th>AGE</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let person of personInfo let i = index;">
+    <td>{{person.name}}</td>
+    <td>{{person.name}}</td>
+    <td *ngIf="person.age" [ngClass]="{'color-green': person.age >=18, 'color-red': person.age <18}">{{person.age}}</td>
+    <td *ngIf="!person.age">Unknown</td>
+    <td><button class="btn btn-remove" (click)="remove(i)">Remove</button></td>
+  </tr>
+</table>

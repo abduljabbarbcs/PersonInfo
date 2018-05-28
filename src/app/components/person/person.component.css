@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.btn-remove{
+  cursor: pointer;
+}
+.btn-remove:hover{
+  background-color: red;
+}
+.color-red{
+  color: red;
+}
+.color-green{
+  color: green;
+}
